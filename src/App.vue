@@ -1,9 +1,11 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <body>
+    <div id="app">
+      <router-link style="color: white" to="/">Search</router-link> ||
+      <router-link style="color: white" to="Playlist">Playlist</router-link>
+      <router-view/>
+    </div>
+  </body>
 </template>
 
 <style>
@@ -15,16 +17,9 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/41294/hero.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

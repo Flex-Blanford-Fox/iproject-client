@@ -1,17 +1,16 @@
 <template>
   <div class="home">
     <Search />
-    <SearchResult />
+    <SearchArtist />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import Search from '../components/Search.vue'
-import SearchResult from '../components/SearchResult.vue'
+import SearchArtist from '../components/SearchArtist.vue'
 
 export default {
   name: 'Home',
-  components: { Search, SearchResult }
+  components: { SearchArtist, Search }
 }
 </script>
